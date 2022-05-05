@@ -1,0 +1,143 @@
+{% load static %}
+<html>
+ <head>
+<link rel="stylesheet" href="{% static 'main.css' %}">
+<link rel="stylesheet" href="{% static 'fon.css' %}">
+ <style>
+    ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #FFFFFF;
+}
+li {
+    float: left;
+}
+li a {
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 20px 20px;
+    text-decoration: none;
+}
+li a:hover:not(.active) {
+    background-color: #DAA520;
+}
+.active {
+    background-color: #FFFFFF;
+}
+    </style>
+ </head>
+ <body>
+ <ul>
+  <li><a href="{% url 'project_index' %}">Main</a></li>
+  <li><a href="{% url 'blog_index' %}">Blog</a></li>
+  <li><a href="{% url 'index' %}">YAP rating</a></li>
+  <li style="float:right"><a class="active" href=https://www.linkedin.com/in/sergei-roznichenko-32a11a228/">
+      <img src="/static/img/sociallinkedin_member_2751.png" width="30px"></a></li>
+   <li style="float:right"><a class="active" href="https://github.com/SergioMasterKrutoy">
+      <img src="/static/img/github_git_icon.png" width="30px"></a></li>
+</ul>
+<table class="table">
+	<thead>
+		<tr>
+			<th>N%</th>
+			<th>Language</th>
+			<th>First mention</th>
+			<th>Index TIOBE</th>
+			<th>Index PyPL</th>
+
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td>1</td>
+			<td>Python</td>
+			<td>1991</td>
+			<td>1</td>
+			<td>1</td>
+
+		</tr>
+		<tr>
+			<td>2</td>
+			<td>C(Си)</td>
+			<td>1980</td>
+			<td>2</td>
+			<td>5</td>
+
+		</tr>
+		<tr>
+			<td>3</td>
+			<td>Java</td>
+			<td>1995</td>
+			<td>3</td>
+			<td>2</td>
+
+		</tr>
+		<tr>
+			<td>4</td>
+			<td>C++</td>
+			<td>1983</td>
+			<td>4</td>
+			<td>5</td>
+
+		</tr>
+		<tr>
+			<td>5</td>
+			<td>C#</td>
+			<td>2000</td>
+			<td>5</td>
+			<td>4</td>
+
+		</tr>
+		<tr>
+			<td>6</td>
+			<td>Visual Basic</td>
+			<td>2001</td>
+			<td>6</td>
+			<td>>10</td>
+
+		</tr>
+		<tr>
+			<td>7</td>
+			<td>JavaScript</td>
+			<td>1195</td>
+			<td>7</td>
+			<td>3</td>
+
+		</tr>
+		<tr>
+			<td>8</td>
+			<td>Assembly language</td>
+			<td>1947</td>
+			<td>8</td>
+			<td>5</td>
+
+		</tr>
+		<tr>
+			<td>9</td>
+			<td>SQL</td>
+			<td>1978</td>
+			<td>9</td>
+			<td>>10</td>
+
+		</tr>
+		<tr>
+			<td>10</td>
+			<td>PHP</td>
+			<td>1995</td>
+			<td>10</td>
+			<td>6</td>
+		</tr>
+	</tbody>
+</table>
+  <div class="footer">
+        <div class="small">
+            <a>Design by S.R.</a>
+            <br>
+      <a>sergik9212@gmail.com</a>
+    </div>
+    </div>
+ </body>
+</html>

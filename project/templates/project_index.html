@@ -1,0 +1,25 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block page_content %}
+<center>
+<h1><font size="5.5" color="black" face="Verdana">My projects</font></h1>
+</center>
+<div class="row">
+    {% for project in projects %}
+    <div class="col-md-4">
+        <div class="card mb-2">
+            <center>
+            <img class="card-img-top" src="{% static project.image %}" width="30%">
+            </center>
+            <div class='card-body'>
+                <h5 class="card-text">{{ project.title }}</h5>
+                <p class="card-text">{{ projects.description }}</p>
+                <a href="{% url 'project_detail' project.pk %}" class="btn btn-primary">
+                    Подробнее
+                </a>
+            </div>
+        </div>
+    </div>
+    {% endfor %}
+</div>
+{% endblock %}
